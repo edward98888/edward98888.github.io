@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player | CodingNepal</title>
-  <link rel="stylesheet" href="../css/style1.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="https://genius.com/" property="og:url" />
+    <meta content="Genius | Song Lyrics &amp; Knowledge" property="og:title" />
+    <meta content="Genius is the world's biggest collection of song lyrics and musical knowledge." property="og:description" />
+    <meta content="website" property="og:type" />
+    <script src="https://kit.fontawesome.com/f2c39b2f23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/Header&Footer.css">
+    <link rel="stylesheet" href="../css/Chart-trangchu.css">
+    <link rel="stylesheet" href="../css/News-trangchu.css">
+    <link rel="stylesheet" href="../css/Musicpage.css">
+
 </head>
 <body>
+  <header>
+
+    <div class="header-1">
+        <form action="/search" method="get" class="PageHeaderSearch">
+            <input name="q" type="text" placeholder="Search lyrics &amp; more"  autoComplete="off" required="">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+
+        <a href="Homepage.html" class="logo">G E N I U S</a>
+        <ul class="navigation-1">
+            <li><a href="SignUp.html" class="Sign Up">SIGN UP</a></li>
+            <li><a href="SignUp.html" class="Sign Ip">SIGN IN</a></li>
+        </ul>
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu" class="fas fa-bars" onclick="navToggle();"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a onclick="navToggle();" href="#features">FEATURES</a></li>
+                <li><a>|</a></li>
+                <li><a onclick="navToggle();" href="#charts">CHARTS</a></li>
+                <li><a>|</a></li>
+                <li><a onclick="navToggle();" href="https://genius.com/#videos">VIDEOS</a></li>
+                <li><a>|</a></li>
+                <li><a onclick="navToggle();" href="#contact">BUSINESS</a></li>
+                <li><a>|</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        </div>
+
+    </div>
+
+</header>
   <div class="wrapper">
     <div class="top-bar">
       <i class="material-icons">expand_more</i>
@@ -55,8 +105,6 @@
   <script src="../js/music1.js"></script>
   <script src="../js/script.js"></script>
 
-</body>
-<body>
   <div class="lyris">
     <p> 
      <strong> LYRIS </strong>
@@ -99,5 +147,46 @@
     Fearless<br>
     </p>
   </div>
+<footer id="contact">
+    <div class="container">
+        <div class="border-1">
+            <div class="footer-content">
+                <p>Genius is the world's biggest<br>
+                    collection of song lyrics and<br>
+                    musical knowledge</p>
+            </div>
+            <div class="social-link">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="footer-heading-1">
+            <ul>    
+                <li><a href="https://genius.com/Genius-about-genius-annotated">About genius</a></li>
+                <li><a href="https://genius.com/Genius-how-genius-works-annotated">Contributor Guidelines</a></li>
+                <li><a href="https://genius.com/Comms-at-genius-press-genius-annotated">Press</a></li>
+                <li><a href="https://teespring.com/stores/genius-merch">Shop</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="https://eventspace.genius.com/">Eventspace</a></li>
+                <li><a href="https://genius.com/static/privacy_policy">Privacy Policy</a></li>
+                <li class="footer-heading-1-content"><a>© 2022 Genius Media Group Inc.</a></li>
+            </ul>
+        </div>
+        <div class="footer-heading-2">
+            <ul>
+                <li><a href="https://genius.com/static/licensing">Licensing</a></li>
+                <li><a href="https://genius.com/Genius-jobs-at-genius-annotated">Jobs</a></li>
+                <li><a href="https://genius.com/developers">Developers</a></li>
+                <li><a href="https://genius.com/static/copyright">Copyright Policy</a></li>
+                <li><a href="https://genius.com/feedback/new">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="https://support.genius.com/hc/en-us/requests/new">Do Not Sell My Personal Information</a></li>
+                <li class="footer-heading-2-content"><a href="https://genius.com/static/terms">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
